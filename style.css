@@ -1,137 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    height: 40%;
-    margin: 0;
-    background-color: hsl(210, 46%, 95%);
-    justify-content: center;
-    align-items: center;
-}
-
-
-.main-container{
-    display: flex;
-    flex-direction: row;
-   
-}
-.left-containers{
-    display: flex;
-    width: 60rem;
-    flex-direction: column;
-    padding: 5rem 0rem 5rem 5rem;
-    padding-right: 0rem;
+body {
+  margin: 0;
+  background-color: hsl(210, 46%, 95%);
+  justify-content: center;
+  align-items: center;
 }
 
-.container2{
-    padding-right: 3rem;
-    width: 30rem;
-    border: 3px solid red;
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
 }
-.top-section{
-    display: flex;
-    flex-direction: row;
-    margin: 0rem;
-    /* margin: 2rem; */
-}
-.bottom-section{
-    display: flex;
-    flex-direction: row;
-}
-.author{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: 12px;
+.left-containers {
+  display: grid;
+  width: 52rem;
+  grid-template-columns: row;
+  margin: 3rem 2rem 3rem 5rem;
 }
 
-.auth-name> h3{
-    font-weight: 200;
-   color: hsl(0, 7%, 97%);
- 
+.container2 {
+  padding-right: 3rem;
+}
+.top-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 52rem;
+}
+.bottom-section {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.author {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  font-size: 12px;
+}
+
+.auth-name > h3 {
+  font-weight: 200;
+  color: hsl(0, 7%, 97%);
 }
 
 .auth-name > p {
-    color: hsl(0, 0%, 81%);
+  color: hsl(0, 0%, 81%);
 }
 
-.Daniel{
-    width: 40rem;
-    background-color: hsl(263, 55%, 52%);
-    margin: 1rem;
-    border-radius: 8px;
-    padding: 20px;
+.Daniel {
+  width: 35rem;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.Daniel, .Jonathan, .Patrick > div  > h3{
-    color: white;
-    font-weight: 300;
-    padding: 15px;
+.Daniel,
+.Jonathan,
+.Patrick > div > h3 {
+  color: white;
+  font-weight: 300;
+  padding: 15px;
 }
 
-.Daniel, .Jonathan, .Patrick > div  > p{
-    color: hsl(0, 0%, 81%);
-    font-weight: 300;
-    padding: 15px;
+.Daniel,
+.Jonathan,
+.Patrick > div > p {
+  color: hsl(0, 0%, 81%);
+  font-weight: 300;
+  padding: 15px;
 }
 
-.Jonathan{
-    width: 20rem;
-    background-color: hsl(217, 19%, 35%);
-    margin: 1rem;
-    border-radius: 8px;
-    padding: 20px;
+.Jonathan {
+  width: 15rem;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 8px;
+  padding: 20px;
 }
-.Jeanette{
-    width: 20rem;
-    margin: 1rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    padding: 20px;
+.Jeanette {
+  width: 15rem;
+  margin: 1rem 0rem 1rem 0rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  padding: 20px;
 }
-.Jeanette .author > div  > h3{
-    color: black;
-    font-weight: 300;
-}
-
-.Jeanette >div > h3{
-    padding: 10px;
-}
-.Jeanette > div  > p{
-    color: hsl(0, 3%, 39%);
-    font-weight: 300;
-    /* padding: 15px; */
+.Jeanette .author > div > h3 {
+  color: black;
+  font-weight: 300;
 }
 
-.Patrick{
-    width: 40rem;
-    margin: 1rem;
-    background-color: hsl(219, 29%, 14%);
-    border-radius: 8px;
-    padding: 20px;
+.Jeanette > div > h3 {
+  padding: 10px;
+}
+.Jeanette > div > p {
+  color: hsl(0, 3%, 39%);
+  font-weight: 300;
 }
 
-.Kira{
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    margin: 6rem 4rem 5rem 1rem;
-    padding: 20px;
-    color: hsl(0, 2%, 27%);
-    width: 19rem;
-    height: 37rem;
-}
-.img img{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+.Patrick {
+  width: 35rem;
+  margin: 1rem;
+  background-color: hsl(219, 29%, 14%);
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.Kira > .author > div  > h3{
-    color: black;
+.Kira {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  margin: 3rem 0rem;
+  padding: 20px;
+  color: hsl(0, 2%, 27%);
+  width: 19rem;
+  height: 37rem;
+}
+.img img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
-.Kira > div  > p{
-    padding: 15px;
+.Kira > .author > div > h3 {
+  color: black;
+}
+
+.Kira > div > p {
+  padding: 15px;
+}
+
+.main-container {
+    margin: 5rem auto;
+    width: min(90%, 75rem);  /* 90% of the viewport width or 75rem, whichever is smaller */
+    display: grid;
+    grid-auto-flow: row;  
+    gap: 2em;
+}
+
+@media (min-width: 55em) {
+    .main-container {
+        grid-auto-flow: column;
+    }
 }
