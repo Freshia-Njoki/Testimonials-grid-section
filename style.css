@@ -129,16 +129,23 @@ body {
   padding: 15px;
 }
 
-.main-container {
-    margin: 5rem auto;
-    width: min(90%, 75rem);  /* 90% of the viewport width or 75rem, whichever is smaller */
-    display: grid;
-    grid-auto-flow: row;  
-    gap: 2em;
-}
+@media only screen and (max-width: 600px) {
 
-@media (min-width: 55em) {
     .main-container {
-        grid-auto-flow: column;
-    }
+            grid-template-columns: 1fr;
+        }
+    
+        .Daniel,
+        .Jeanette,
+        .Jonathan,
+        .Patrick {
+            grid-column: 1 / span 1;
+             min-height: 5rem;
+             width: 20rem;
+        }
+        .Kira{
+            margin-left: 6rem;
+            margin-top: 0rem;
+
+        }
 }
