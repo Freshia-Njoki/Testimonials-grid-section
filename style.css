@@ -130,22 +130,20 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
 
-    .main-container {
-            grid-template-columns: 1fr;
-        }
-    
-        .Daniel,
-        .Jeanette,
-        .Jonathan,
-        .Patrick {
-            grid-column: 1 / span 1;
-             min-height: 5rem;
-             width: 20rem;
-        }
-        .Kira{
-            margin-left: 6rem;
-            margin-top: 0rem;
-
-        }
+  .Daniel,
+  .Jeanette,
+  .Jonathan,
+  .Patrick {
+    grid-column: 1 / span 1;
+    min-height: 5rem;
+    width: 20rem;
+  }
+  .Kira {
+    margin-left: 6rem;
+    margin-top: 0rem;
+  }
 }
